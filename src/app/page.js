@@ -21,7 +21,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <p className=" hover:text-blue-400 text-xl sm:text-xl mb-6 ">
+          <p className=" hover:text-white text-xl sm:text-xl mb-6 ">
             Full-Stack Developer | Web3 Enthusiast
           </p>
 

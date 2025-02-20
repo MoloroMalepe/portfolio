@@ -48,6 +48,7 @@ export default function About() {
           <p className="text-lg leading-relaxed text-gray-700 mt-4">
             <strong>Education:</strong> Diploma in Software Development, Tshwane
             University of Technology.
+            <p>Systems Support NQF5, SPECCON</p>
           </p>
         </div>
       </main>

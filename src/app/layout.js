@@ -27,8 +27,7 @@ export default function RootLayout({ children }) {
         <section
           className="bg-cover bg-center mt-20 "
           style={{
-            backgroundImage:
-              "url(https://www.docupile.com/wp-content/uploads/2024/06/120.png)",
+            backgroundColor: "gray-200",
           }}
         >
           {children}
