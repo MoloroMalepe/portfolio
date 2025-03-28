@@ -23,7 +23,7 @@ export default function About() {
     // </div>
     <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 sm:p-20 font-[var(--font-geist-sans)] gap-16 md:flex-row lg:flex-col">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start max-w-3xl w-full">
-        <div className="w-flex-shrink-0 max-w-3xl border shadow-xl border-blue-400 rounded-lg p-6 bg-white hover:shadow-2xl transition-all duration-300">
+        <div className="w-flex-shrink-0 max-w-3xl border shadow-xl border-blue-400 rounded-lg p-6 bg-gray-200 hover:shadow-2xl transition-all duration-300">
           <h2 className="font-bold text-2xl text-center sm:text-left text-blue-950 mb-4 underline">
             About Me
           </h2>
