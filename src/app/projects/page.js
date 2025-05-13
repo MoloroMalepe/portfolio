@@ -1,45 +1,45 @@
-export default function Projects() {
+import ProjectCard from "../projectsCard/page";
+
+const Projects = () => {
+  const projects = [
+    {
+      title: "Project Title 1",
+      description: "A brief description of project 1 and its features.",
+      image: "/images/project1.jpg", // Replace with your image
+      // Optional
+      githubLink: "https://github.com/your-username/project1",
+    },
+    {
+      title: "Project Title 2",
+      description: "A brief description of project 2 and its features.",
+      image: "/images/project2.jpg", // Replace with your image
+      // Optional
+      githubLink: "https://github.com/your-username/project2",
+    },
+    {
+      title: "Project Title 3",
+      description: "A brief description of project 3 and its features.",
+      image: "/images/project3.jpg", // Replace with your image
+
+      githubLink: "https://github.com/your-username/project3",
+    },
+    // Add more projects as needed
+  ];
+
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 sm:p-20 font-[var(--font-geist-sans)] gap-16 md:flex-row lg:flex-col">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start max-w-3xl w-full">
-        <div className="w-flex-shrink-0 max-w-3xl border shadow-xl border-blue-400 rounded-lg p-6 bg-white hover:shadow-2xl transition-all duration-300">
-          <h2 className="font-bold text-2xl text-center sm:text-left text-blue-950 mb-4 underline">
-            My collaborations
-          </h2>
-
-          <ul className="list-disc list-inside mt-4">
-            {" "}
-            {/* Added a ul for bullet points */}
-            <li>
-              <strong className="text-gray-700 text-lg ">
-                Codeigniter E-commerce Platform:
-              </strong>
-
-              <p className="text-lg leading-relaxed text-gray-600">
-                In a WIL collaboration, I developed an ecommerce platform using
-                CodeIgniter. My responsibilities included designing the
-                relational database schema, normalizing tables for optimal
-                performance, and implementing responsive frontend components
-                using HTML, CSS, and JavaScript. This project allowed me to
-                apply my skills in database management and frontend development
-                within a real-world context
-              </p>
-            </li>
-            <li>
-              <strong className="text-gray-700 text-lg ">
-                Mechanic-Insurance:
-              </strong>
-              <p className="text-lg leading-relaxed text-gray-700">
-                A collaborative project that streamlines vehicle repairs between
-                mechanics and insurance companies. It handles everything from
-                the repair process to proof of delivery and invoicing, all
-                within the system, eliminating the need for direct customer
-                involvement.
-              </p>
-            </li>
-          </ul>
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-semibold text-gray-800 mb-8 text-center shadow-xl">
+          Projects
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
         </div>
-      </main>
-    </div>
+      </div>
+    </section>
   );
-}
+};
+
+export default Projects;

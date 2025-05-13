@@ -1,9 +1,28 @@
-export default function Page() {
+const Skills = () => {
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "Git",
+    "GitHub",
+    // Add more skills as needed
+  ];
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] md:flex-row and lg:flex-col">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1>My skills</h1>
-      </main>
+    <div className="mt-6">
+      <h3 className="text-xl font-semibold text-gray-800 mb-2">Skills</h3>
+      <ul className="list-disc list-inside text-gray-700">
+        {skills.map((skill, index) => (
+          <li key={index}>{skill}</li>
+        ))}
+      </ul>
     </div>
   );
-}
+};
+
+export default Skills;
