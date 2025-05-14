@@ -1,3 +1,4 @@
+import Experience from "../experience/page";
 const Skills = () => {
   const skills = [
     "HTML",
@@ -14,14 +15,17 @@ const Skills = () => {
   ];
 
   return (
-    <div className="mt-6">
-      <h3 className="text-xl font-semibold text-gray-800 mb-2">Skills</h3>
-      <ul className="list-disc list-inside text-gray-700">
-        {skills.map((skill, index) => (
-          <li key={index}>{skill}</li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div className="mt-6 mx-6">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">Skills</h3>
+        <ul className="list-disc list-inside text-gray-700">
+          {skills.map((skill, index) => (
+            <li key={index}>{skill}</li>
+          ))}
+        </ul>
+      </div>
+      <Experience />
+    </>
   );
 };
 

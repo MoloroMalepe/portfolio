@@ -17,36 +17,22 @@ const Contact = () => {
           </p>
           <div className="space-y-4">
             {/* WhatsApp Button */}
-            <div className="flex justify-center">
+            <div className="flex justify-center ">
               <a
                 href={`https://wa.me/${whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-md transition duration-200"
+                className="bg-gray-400 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-md transition duration-200"
               >
-                <svg
-                  className="w-6 h-6 mr-2 inline-block align-middle"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M19 3.44v17.12a1 1 0 01-.72.95L12.1 18.2l-6.2 3.29a1 1 0 01-.7-.95V3.44a1 1 0 011.42-.95l6.2 3.29 6.2-3.29a1 1 0 01.7.95zM12 16.5a4.5 4.5 0 01-3.18-1.32L12 12l3.18 3.18A4.5 4.5 0 0112 16.5zm0-6a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    d="M12 16.5a4.5 4.5 0 110-9 4.5 4.5 0 010 9zm0-1.5a3 3 0 100-6 3 3 0 000 6z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                WhatsApp Me
+                <div className="flex flex-row space-x-3 w-[7rem]">
+                  <FaWhatsapp size={48} />
+                  <p className="font-mono text-sm">WhatsApp Me</p>
+                </div>
               </a>
             </div>
 
             {/* Email Button */}
-            <div className="flex justify-center">
+            <div className="flex justify-center  flex-row">
               <a
                 href={`mailto:${emailAddress}?subject=${encodeURIComponent(
                   emailSubject
@@ -62,7 +48,7 @@ const Contact = () => {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                Email Me
+                <p className="font-mono text-sm"> Email Me</p>
               </a>
             </div>
           </div>

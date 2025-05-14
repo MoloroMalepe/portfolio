@@ -54,7 +54,7 @@ const Header = () => {
           </div>
         </div>
         {/*  Desktop navigation */}
-        <nav className="hidden md:flex items-center space-x-4  text-[16px] text-gray-500">
+        <nav className="hidden md:flex items-center space-x-4  text-[16px] text-gray-800">
           <Link href="/" className=" hover:text-blue-400 rounded-lg p-2">
             Home
           </Link>
@@ -84,8 +84,8 @@ const Header = () => {
         {/* Mobile navigation */}
         <div className="flex items-center md:hidden">
           <button
-            className="inline-flex items-center justify-center p-2 rounded-md text-white
-            hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            className="inline-flex items-center justify-center p-2 rounded-md text-gray-800
+            hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black"
             onClick={toggleHeader}
           >
             {isClick ? (
@@ -110,8 +110,8 @@ const Header = () => {
               isClick ? "translate-x-0" : "-translate-x-full"
             } transition-transform duration-300 ease-in-out`}
           >
-            <div className="flex flex-col items-center space-y-2 mt-10 text-gray-500">
-              <Link href="/" className="text-white hover:text-blue-400 p-2">
+            <div className="flex flex-col items-center space-y-2 mt-10 text-gray-800">
+              <Link href="/" className="text-gray-800 hover:text-blue-400 p-2">
                 Home
               </Link>
               <Link href="/about" className=" hover:text-blue-400 p-2">
@@ -136,17 +136,19 @@ const Header = () => {
 
 export function Footer() {
   return (
-    // <div className=" flex items-center  bg-gray-800 flex-col fixed bottom-0 w-full h-24 justify-center text-white rounded-sm p-4">
-    //   <div className="container mx-auto text-center">
+    <div className=" flex items-center  bg-gray-800 flex-col fixed bottom-0 w-full h-fit justify-center text-white rounded-sm p-4">
+      <div className="container mx-auto text-center">
+        <p>
+          &copy; {new Date().getFullYear()} Moloro Malepe. All rights reserved.
+        </p>
+      </div>
+    </div>
+    // <footer className="bg-gray-800 text-white py-4 text-center">
+    //   <div className="container mx-auto px-4">
     //     <p>
-    //       &copy; {new Date().getFullYear()} Moloro Malepe. All rights reserved.
+    //       &copy; {new Date().getFullYear()} Moloro Malepe. All Rights Reserved.
     //     </p>
     //   </div>
-    // </div>
-    <footer className="bg-gray-800 text-white py-4 text-center">
-      <div className="container mx-auto px-4">
-        <p>&copy; {new Date().getFullYear()} Your Name. All Rights Reserved.</p>
-      </div>
-    </footer>
+    // </footer>
   );
 }

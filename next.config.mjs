@@ -5,7 +5,7 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "www.google.com",
-        port: "",
+        port: " ",
         pathname: "/url/**", // Adjust the pathname if needed to be more specific
       },
     ],
