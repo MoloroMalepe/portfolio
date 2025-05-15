@@ -24,7 +24,6 @@ const Skills = () => {
           ))}
         </ul>
       </div>
-      <Experience />
     </>
   );
 };

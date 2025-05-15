@@ -9,7 +9,7 @@ function Hero() {
     <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center bg-slate-100 text-black min-h-screen">
       <div className="p-8">
         <h1 className="text-2xl font-semibold">
-          Im{" "}
+          I&#39;m{" "}
           <Link href="/about" className="underline text-blue-600">
             Moloro Malepe,
           </Link>
@@ -32,15 +32,6 @@ function Hero() {
               className="rounded-lg h-10 px-6 bg-blue-600 flex items-center justify-center text-white hover:bg-blue-800 transition-colors"
             >
               View CV
-            </Link>
-
-            <Link
-              href="/contact"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg h-10 px-4 bg-gray-800 flex items-center justify-center text-white hover:bg-blue-800 transition-colors"
-            >
-              Contact me
             </Link>
           </div>
         </div>

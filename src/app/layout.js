@@ -55,27 +55,27 @@ const Header = () => {
         </div>
         {/*  Desktop navigation */}
         <nav className="hidden md:flex items-center space-x-4  text-[16px] text-gray-800">
-          <Link href="/" className=" hover:text-blue-400 rounded-lg p-2">
+          <Link href="/" className=" hover:text-blue-00 rounded-lg p-2">
             Home
           </Link>
-          <Link href="/about" className="hover:text-blue-400 p-2">
+          <Link href="/about" className="hover:text-blue-600 p-2">
             About
           </Link>
           <Link
             href="/projects"
-            className=" hover:text-blue-400  rounded-lg p-2"
+            className=" hover:text-blue-600  rounded-lg p-2"
           >
             Projects
           </Link>
           <Link
             href="/skills"
-            className="  hover:text-blue-400  rounded-lg p-2"
+            className="  hover:text-blue-600  rounded-lg p-2"
           >
             Skills
           </Link>
           <Link
             href="/contact"
-            className=" hover:text-blue-400 rounded- p-2 w-[2rem]"
+            className=" hover:text-blue-600 rounded- p-2 w-[2rem]"
           >
             Contact
           </Link>
@@ -111,19 +111,19 @@ const Header = () => {
             } transition-transform duration-300 ease-in-out`}
           >
             <div className="flex flex-col items-center space-y-2 mt-10 text-gray-800">
-              <Link href="/" className="text-gray-800 hover:text-blue-400 p-2">
+              <Link href="/" className="text-gray-800 hover:text-blue-600 p-2">
                 Home
               </Link>
-              <Link href="/about" className=" hover:text-blue-400 p-2">
+              <Link href="/about" className=" hover:text-blue-600 p-2">
                 About
               </Link>
-              <Link href="/projects" className=" hover:text-blue-400 p-2">
+              <Link href="/projects" className=" hover:text-blue-600 p-2">
                 Projects
               </Link>
-              <Link href="/skills" className=" hover:text-blue-400 p-2">
+              <Link href="/skills" className=" hover:text-blue-600 p-2">
                 Skills
               </Link>
-              <Link href="/contact" className=" hover:text-blue-400 p-2">
+              <Link href="/contact" className=" hover:text-blue-600 p-2">
                 Contact
               </Link>
             </div>

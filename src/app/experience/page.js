@@ -11,7 +11,7 @@ const Experience = () => {
       <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="bg-slate-100 rounded-md shadow-md p-6">
+            <div class="bg-slate-100 rounded-md shadow-md p-6text-base sm:text-sm md:text-md">
               <h4 class="text-lg font-semibold text-blue-600 mb-2">
                 Full-stack development Foundation
               </h4>
@@ -71,7 +71,7 @@ const Experience = () => {
       <section className="py-8 bg-gray-100">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="bg-white rounded-md shadow-md p-6">
+            <div class="bg-white rounded-md shadow-md p-6 text-base sm:text-sm md:text-md">
               <h4 class="text-lg font-semibold text-blue-600 mb-2">
                 Quality Assurance Insights
               </h4>
@@ -134,7 +134,7 @@ const Experience = () => {
       <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="bg-slate-100 rounded-md shadow-md p-6">
+            <div class="bg-slate-100 rounded-md shadow-md p-6 text-base sm:text-sm md:text-md">
               <h4 class="text-lg font-semibold text-blue-600 mb-2">
                 Additional Skills & Knowledge
               </h4>
