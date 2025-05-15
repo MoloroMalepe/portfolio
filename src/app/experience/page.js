@@ -193,7 +193,6 @@ const Experience = () => {
             <div className=" border-l-0 md:border-l-2 md:border-gray-300">
               <div className=" flex flex-row bg-white items-center justify-center rounded-e-xl h-full">
                 <div className="flex flex-col items-center justify-center space-y-2">
-                  1
                   <Image src={firstPic} alt="Moloro" className="rounded-full" />
                   <Image src={thirdPic} alt="Moloro" className="rounded-full" />
                 </div>
@@ -208,7 +207,6 @@ const Experience = () => {
                     alt="Moloro"
                     className="rounded-full"
                   />
-                  2
                 </div>
               </div>
             </div>
