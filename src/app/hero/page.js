@@ -29,9 +29,17 @@ function Hero() {
               href="https://docs.google.com/document/d/1Yb9ngZEJosIre-EpuuyJ_r_-ypygJ85q/edit?usp=sharing&ouid=115767614928927143459&rtpof=true&sd=true"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg h-10 px-6 bg-blue-600 flex items-center justify-center text-white hover:bg-blue-800 transition-colors"
+              className="rounded-lg h-10 px-2 bg-blue-600 flex items-center justify-center hover:text-gray-800 text-white hover:bg-blue-300 transition-colors whitespace-nowrap font-medium"
             >
-              View CV
+              View cv
+            </Link>
+            <Link
+              href="../contact/page.js"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg h-10 px-2 bg-gray-600 flex items-center justify-center text-white hover:text-gray-800 hover:bg-gray-300 transition-colors whitespace-nowrap"
+            >
+              Contact me
             </Link>
           </div>
         </div>

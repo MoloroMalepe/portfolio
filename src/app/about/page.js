@@ -8,11 +8,11 @@ import JourneyThree from "../journeyThree/page";
 const About = () => {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col bg-blue-100">
         <p className="p-5 text-3xl font-semibold text-gray-800 underline">
           My Journey
         </p>
-        <div className="flex flex-row">
+        <div className="flex flex-row text-black">
           <div className="w-1/2 pr-4">
             <JourneyOne />
             <JourneyThree />

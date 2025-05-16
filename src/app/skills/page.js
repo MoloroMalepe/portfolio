@@ -24,16 +24,12 @@ const Skills = () => {
     "",
     "Git",
     "GitHub",
-    // Add more skills as needed
   ];
 
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col bg-blue-100 shadow-lg rounded-xl mx-2">
         <div>
-          <p className="text-gray-800 text-3xl font-semibold p-5 underline">
-            Technologies
-          </p>
           <div className="animate-slide-left flex flex-row space-x-3 h-fit w-fit rounded-md ml-3 mt-3  p-2 overflow-hidden">
             <FaHtml5 size={48} className="text-[#E34F26]" />
             <FaCss3 size={48} className="text-[#1572B6]" />

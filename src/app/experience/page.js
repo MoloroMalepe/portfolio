@@ -8,10 +8,10 @@ import fourthPic from "../assets/picture/support.jpeg";
 const Experience = () => {
   return (
     <>
-      <section className="py-8 bg-white">
+      <section className="py-8 bg-slate-100 shadow-lg">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="bg-slate-100 rounded-md shadow-md p-6text-base sm:text-sm md:text-md">
+            <div class="bg-gray-100 rounded-md shadow-lg p-6 text-base sm:text-sm md:text-md">
               <h4 class="text-lg font-semibold text-blue-600 mb-2">
                 Full-stack development Foundation
               </h4>
@@ -68,10 +68,10 @@ const Experience = () => {
         </div>
       </section>
 
-      <section className="py-8 bg-gray-100">
+      <section className="py-8 bg-slate-100">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="bg-white rounded-md shadow-md p-6 text-base sm:text-sm md:text-md">
+            <div class="bg-gray-100 rounded-md shadow-md p-6 text-base sm:text-sm md:text-md">
               <h4 class="text-lg font-semibold text-blue-600 mb-2">
                 Quality Assurance Insights
               </h4>
@@ -116,7 +116,7 @@ const Experience = () => {
                 </span>
               </div>
             </div>
-            <div className=" border-l-0 md:border-l-2 md:border-gray-300">
+            {/* <div className=" border-l-0 md:border-l-2 md:border-gray-300">
               <div className=" flex bg-gray-100 items-center justify-center border-l-0 md:border-1-2 md:border-gray-300 rounded-lg h-full">
                 <Image
                   src={qAphoto}
@@ -126,7 +126,7 @@ const Experience = () => {
                   className="rounded-xl"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

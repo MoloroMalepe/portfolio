@@ -44,7 +44,7 @@ const Header = () => {
   };
 
   return (
-    <header className=" py-8 bg-slate-50  font-medium shadow-sm fixed top-0 left-0 w-full z-1 ">
+    <header className=" py-8 bg-gray-100  font-medium shadow-xl fixed top-0 left-0 w-full z-1 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div className="flex items-center">
           <div className="flex-shrink-0 font-semibold w-[35%]">
@@ -55,27 +55,33 @@ const Header = () => {
         </div>
         {/*  Desktop navigation */}
         <nav className="hidden md:flex items-center space-x-4  text-[16px] text-gray-800">
-          <Link href="/" className=" hover:text-blue-00 rounded-lg p-2">
+          <Link
+            href="/"
+            className=" hover:text-blue-00 rounded-lg hover:bg-white hover:text-blue-600 p-2"
+          >
             Home
           </Link>
-          <Link href="/about" className="hover:text-blue-600 p-2">
+          <Link
+            href="/about"
+            className="hover:text-blue-600 hover:bg-white p-2"
+          >
             About
           </Link>
           <Link
             href="/projects"
-            className=" hover:text-blue-600  rounded-lg p-2"
+            className=" hover:text-blue-600 hover:bg-white rounded-lg p-2"
           >
             Projects
           </Link>
           <Link
             href="/skills"
-            className="  hover:text-blue-600  rounded-lg p-2"
+            className="  hover:text-blue-600 hover:bg-white rounded-lg p-2"
           >
             Skills
           </Link>
           <Link
             href="/contact"
-            className=" hover:text-blue-600 rounded- p-2 w-[2rem]"
+            className=" hover:text-blue-600  rounded-lg p-2 hover:bg-white"
           >
             Contact
           </Link>
@@ -110,21 +116,30 @@ const Header = () => {
               isClick ? "translate-x-0" : "-translate-x-full"
             } transition-transform duration-300 ease-in-out`}
           >
-            <div className="flex flex-col items-center space-y-2 mt-10 text-gray-800">
+            <div className="flex flex-col i  mt-10 text-gray-800">
               <Link href="/" className="text-gray-800 hover:text-blue-600 p-2">
-                Home
+                <div className="hover:bg-slate-100 p-2 rounded-md">
+                  {" "}
+                  {/* Added a wrapping div with hover style */}
+                  Home
+                </div>
               </Link>
               <Link href="/about" className=" hover:text-blue-600 p-2">
-                About
+                <div className="hover:bg-slate-100 p-1 rounded-md">About</div>
               </Link>
               <Link href="/projects" className=" hover:text-blue-600 p-2">
-                Projects
+                <div className="hover:bg-slate-100 p-2 rounded-md">
+                  Projects
+                </div>
               </Link>
-              <Link href="/skills" className=" hover:text-blue-600 p-2">
-                Skills
+              <Link
+                href="/skills"
+                className=" rounded-md hover:text-blue-600 p-2"
+              >
+                <div className="hover:bg-slate-100 p-2 rounded-md">Skills</div>
               </Link>
               <Link href="/contact" className=" hover:text-blue-600 p-2">
-                Contact
+                <div className="hover:bg-slate-100 p-2 rounded-md">Contact</div>
               </Link>
             </div>
           </nav>
